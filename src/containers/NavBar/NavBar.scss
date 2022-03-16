@@ -1,0 +1,29 @@
+@use "../../assets/styling/global_variables" as *;
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $bar;
+  position: fixed;
+  align-items: center;
+  padding: 10px 0;
+  a {
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+      color: $hover;
+    }
+  }
+  &__page-sections {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+  }
+  &__external-links {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+  }
+}
